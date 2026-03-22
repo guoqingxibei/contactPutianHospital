@@ -7,13 +7,14 @@ from DrissionPage import ChromiumPage, ChromiumOptions
 
 # http://g1879.gitee.io/drissionpagedocs/ChromiumPage/browser_options/
 co = (ChromiumOptions()
+.set_argument('--no-sandbox')
 .set_no_imgs(False)  # 加载图片
-.set_headless(False)  # 有界面模式
+.set_headless(True)  # 有界面模式
 .auto_port(True)  # 自动获取端口
 # .set_proxy("xxxxx")
 .set_user_agent(UserAgent().random)  # 随机UserAgent
 .set_paths(
-    browser_path=r'这里修改为您的浏览器可执行文件路径，可以在chrome浏览器的地址栏中输入：chrome://version 查看'))
+    browser_path=r'/usr/bin/chromium-browser'))
 BAIDU_URL = 'https://www.baidu.com/'
 TEL_NUMBER = ''  # 手机号码
 TEL_NAME = ''  # 名字(可选)

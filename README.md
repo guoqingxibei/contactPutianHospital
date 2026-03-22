@@ -40,3 +40,15 @@
 5. **适用法律**: 本免责声明受到适用法律的约束。任何对本声明的解释或争议，均应依照相关法律的解释和裁决。
 
 通过使用本项目的内容，即表示您同意遵守本免责声明的所有条款和条件。如果您不同意这些条款，请停止使用本项目。
+
+## root in Ubuntu
+
+apt update
+apt install python3.12-venv
+apt install -y chromium-browser chromium-chromedriver
+
+cd contactPutianHospital
+python3 -m venv venv
+source venv/bin/activate
+vim main.py
+python3 main.py
