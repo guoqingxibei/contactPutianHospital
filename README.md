@@ -50,5 +50,5 @@ apt install -y chromium-browser chromium-chromedriver
 cd contactPutianHospital
 python3 -m venv venv
 source venv/bin/activate
-vim main.py
-python3 main.py
+pip3 install -r requirements.txt
+python3 main.py 1234567 张三
